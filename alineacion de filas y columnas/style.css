@@ -1,0 +1,37 @@
+body{
+
+    font-family: arial;
+
+}
+
+.container{
+    display: grid;
+                 /* filas              columnas */
+    grid-template: repeat(4,100px) / repeat(3,200px);
+    grid-gap: 5px;
+    height: 100vh;
+    /* justify-items: start-end-center-stretch; */
+    /* justify-items: center;
+       align-items: center; */
+
+    justify-content: center;
+    align-content: center;   
+    
+}
+
+.item {
+    
+    background: lightblue;
+    border: solid 1px red;
+}
+
+/* .item:nth-of-type(5){
+
+    align-self: start;
+    justify-self: start;
+
+} */
+
+
+
+
