@@ -1,0 +1,23 @@
+body{
+
+    font-family: arial;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px;
+
+                            /* filas              columnas */
+    grid-template:200px 200px 200px 200px / 500px 300px;
+
+}
+
+.item{
+
+    background: lightblue;
+    padding: 10px;
+    border: solid 1px red;
+
+}

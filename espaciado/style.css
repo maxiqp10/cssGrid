@@ -1,0 +1,44 @@
+body{
+
+    font-family: arial;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px;
+
+                            /* filas              columnas */
+    grid-template:200px 200px 200px 200px / 500px 500px;
+    
+    grid-column-gap: 30px;
+    grid-row-gap: 50px; 
+
+           /* filas columnas */
+    grid-gap: 10px 100px;
+}
+
+.item{
+
+    background: lightblue;
+    padding: 10px;
+    border: solid 1px red;
+
+}
+
+.item:nth-of-type(4){
+    background: red;
+    overflow: auto;
+    display: grid;
+    grid-template: 50px 50px / 200px 200px 200px;
+}
+
+.item .item{
+
+    background: yellow;
+}
+
+.item .item:nth-of-type(4){
+    overflow: hidden;
+}
